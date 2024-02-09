@@ -1,12 +1,13 @@
-const dice = document.getElementById('myImage')
+//const image = document.getElementById('myImage')
+const dice = document.querySelector('img')
 
 const randNum = (min,max) => {
-//    alert("hello world")
-    return Math.floor(Math.random() *max) + min
     
+    return Math.floor(Math.random() *max) + min
 }
 
 dice.addEventListener('click',() => {
+//    alert("hello world")
     dice.src="./img/" + randNum(1,6) + ".png" 
 })
 
